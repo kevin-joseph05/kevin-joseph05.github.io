@@ -1,22 +1,116 @@
+:root {
+  --bg-color: #fafafa;
+  --text-color: #333;
+  --header-color: #222;
+  --link-color: #007bff;
+  --border-color: #ddd;
+  --card-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #222;
+  --text-color: #fafafa;
+  --header-color: #eee;
+  --link-color: #8ab4f8;
+  --border-color: #444;
+  --card-bg: #333;
+}
+
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--header-color);
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
 }
 
 nav a {
-  margin-right: 1rem;
   text-decoration: none;
-  color: #333;
+  color: var(--link-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+#theme-switcher {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
 .project {
-  margin-bottom: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: #888;
+}
