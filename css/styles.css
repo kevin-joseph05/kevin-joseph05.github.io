@@ -126,6 +126,16 @@ h1 {
   text-align: justify;
 }
 
+.bio2 a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.bio2 a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .work-heading {
   font-size: 18pt;
   font-weight: bold;
@@ -198,6 +208,7 @@ h1 {
 }
 
 .work-links a:hover {
+  color: var(--accent);
   text-decoration: underline;
 }
 
