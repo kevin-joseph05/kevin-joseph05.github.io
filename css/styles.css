@@ -93,28 +93,6 @@ h1 {
   display: block;
 }
 
-.webring {
-  max-width: 680px;
-  margin: 1rem auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  font-family: Consolas, monospace;
-  font-size: 14pt;
-}
-
-.webring a {
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.webring a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-
 
 .webring svg {
   vertical-align: middle;
