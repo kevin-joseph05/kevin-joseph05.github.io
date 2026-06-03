@@ -3,43 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kevin Joseph | CS & Stats</title>
+  <title>Kevin Joseph</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
+  <h1>Kevin Joseph</h1>
+  <p class="links">
+    <a href="https://github.com/kevin-joseph05" target="_blank" rel="noopener noreferrer">GitHub</a>
+    /
+    <a href="https://linkedin.com/in/kevin--joseph" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    /
+    <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+  </p>
+  <p class="bio">
+  Hi, I'm Kevin Joseph. I'm a third-year student at the University of Toronto, and I'm currently pursuing a double-major in statistics and computer science. 
+  </p>
+  <div class="image-row">
     <div>
-      <h1>Kevin Joseph</h1>
-      <p>Computer Science & Statistics @ UofT</p>
+      <div class="img-frame square">
+        <img src="assets/square.jpg" alt="square image" title="Picture of me!" />
+      </div>
     </div>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="assets/Kevin_Joseph_Resume-2.pdf" target="_blank">Resume</a>
-      <a href="#contact">Contact</a>
-      <button id="theme-switcher">🌓</button>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Projects</h2>
-    <div id="projects-container"></div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out! I'm always open to discussing new projects, creative ideas, or opportunities.</p>
-    <div id="contact-links">
-        <a href="mailto:kevnjoseph42@gmail.com">kevnjoseph42@gmail.com</a>
-        <a href="https://github.com/kevin-joseph05" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/kevin--joseph" target="_blank">LinkedIn</a>
+    <div>
+      <div class="img-frame landscape">
+        <img src="assets/rectangle.jpg" alt="landscape image" title="Great landscape pic of the Swiss Alps" />
+      </div>
     </div>
-  </section>
+  </div>
+  <p class="img-caption">Stoos, Switzerland - August 2024</p>
 
-  <footer>
-    <p>&copy; 2026 Kevin Joseph</p>
-  </footer>
+  <div class="webring">
+    <a href="https://webring.ca/prev/your-slug">←</a>
+    <a href="https://webring.ca">
+      <img src="assets/maple-leaf-removebg-preview.png" alt="maple leaf" height="36" />
+    </a>
+    <a href="https://webring.ca/next/your-slug">→</a>
+  </div>
 
-  <script src="js/main.js"></script>
+  <p class="bio2">
+  Previously, I worked at CIBC as an application developer and at FanVerse as a data science intern. Right now I'm exploring GARCH-based volatility modeling on stock return data and building a SQLite engine from scratch in C.
+  </p>
+
+  <h2 class="work-heading">Work Experience</h2>
+  <div class="work-entry">
+    <a href="https://www.wearefanverse.com/" target="_blank" rel="noopener noreferrer"><img src="assets/work/fanverse.png" alt="Fanverse" /></a>
+    <div>
+      <span class="work-date">Mar 2026 - May 2026</span>
+      <p>FanVerse is a B2B SaaS fan intelligence platform focused on women's sports analytics. The technical work covered full-stack infrastructure including database architecture with Supabase Postgres, a batch data ingestion pipeline, a Next.js frontend with a FastAPI backend, fan segmentation logic, and an AI-powered query panel built on the Claude and Gemini APIs.</p>
+      <div class="work-links">
+        <a href="https://www.wearefanverse.com/" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-entry">
+    <a href="https://www.cibc.com/" target="_blank" rel="noopener noreferrer"><img src="assets/work/cibc-logo.png" alt="CIBC" /></a>
+    <div>
+      <span class="work-date">May 2025 - Aug 2025</span>
+      <p>At CIBC, the work focused on building and optimizing internal data pipelines using Python and the Azure SDK. This included an asynchronous producer-consumer pipeline for processing large volumes of Azure Blob Storage data, an ETL pipeline for extracting and filtering log events, and automated aggregation of data from 50+ API endpoints into standardized Excel reports using Pandas.</p>
+      <div class="work-links">
+        <a href="https://www.cibc.com/" target="_blank" rel="noopener noreferrer">Website</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="work-heading">Projects</h2>
+
+  <div class="work-entry project-entry">
+    <a href="https://019d0430-b246-4443-c144-9437cec4e883.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer"><img src="assets/projects/armavisualizer.png" alt="Arma Visualizer Screenshot" /></a>
+    <div>
+      <span class="work-date">Arma Visualizer: R, roxygen2, R Markdown, Shiny</span>
+      <p>An R package built to standard conventions, with S3 class implementations, roxygen2-style documentation, and testthat unit tests covering each model family. It also includes proper vignettes walking through the AR, MA, and linear regression workflows, making it more of a reproducible, documented statistical tool than just a collection of scripts.</p>
+      <div class="work-links">
+        <a href="https://github.com/Kevaan-b/STA380" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://019d0430-b246-4443-c144-9437cec4e883.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer">Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-entry project-entry">
+    <a href="https://devpost.com/software/prove-it" target="_blank" rel="noopener noreferrer"><img src="assets/projects/prove-it.jpg" alt="project" /></a>
+    <div>
+      <span class="work-date">Prove It!: Python, Next.js, React, PostgreSQL</span>
+      <p>A real-time collaborative proof editor built for discrete math students, where an AI backend (Gemini) analyzes your writing and flags logical errors, structural issues, and grammatical problems inline as you type. It's a full-stack monorepo with a Next.js frontend, Socket.IO for live collaboration, and a FastAPI ML service connected via a Redis queue. Won best use of DigitalOcean at EmberHacks 2025.</p>
+      <div class="work-links">
+        <a href="https://github.com/phintruong/Prove-It" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://devpost.com/software/prove-it" target="_blank" rel="noopener noreferrer">Devpost</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-entry project-entry">
+    <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer"><img src="assets/projects/hangman-java-game.png" alt="project" /></a>
+    <div>
+      <span class="work-date">Hangman: Java, Maven, Java-Websocket, Okhttp</span>
+      <p>A Java Hangman game built around Clean Architecture, where each layer (entities, use cases, interface adapters, and frameworks) has strict dependency rules and single responsibilities. It leans heavily on OOP design patterns like State for round lifecycle management, Builder for app wiring, and Observer for view updates, with proper DAO interfaces keeping the data layer swappable. Written as a group project for CSC207, so the focus was as much on getting the architecture right as on the game itself.</p>
+      <div class="work-links">
+        <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <p class="contact-label">Contact</p>
+    <a href="mailto:kevnjoseph42@gmail.com">kevnjoseph42@gmail.com</a>
+  </div>
 </body>
 </html>
-
