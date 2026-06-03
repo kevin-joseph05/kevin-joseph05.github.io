@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+<div class="intro-card">
   <h1>Kevin Joseph</h1>
   <p class="links">
     <a href="https://github.com/kevin-joseph05" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -31,18 +32,17 @@
     </div>
   </div>
   <p class="img-caption">Stoos, Switzerland - August 2024</p>
-
   <div class="webring">
     <a href="https://webring.ca/prev/your-slug">←</a>
     <a href="https://webring.ca">
-      <img src="assets/maple-leaf-removebg-preview.png" alt="maple leaf" height="36" />
+      <img src="assets/maple-leaf-removebg-preview.png" alt="maple leaf" height="36" onmouseover="this.src='assets/mouse-over.png'" onmouseout="this.src='assets/maple-leaf-removebg-preview.png'" />
     </a>
     <a href="https://webring.ca/next/your-slug">→</a>
   </div>
-
   <p class="bio2">
   Previously, I worked at CIBC as an application developer and at FanVerse as a data science intern. Currently, I'm reading Flash Boys by Michael Lewis and Dark Pools by Scott Patterson. I'm also <a href="https://github.com/kevin-joseph05/sqlite-in-c" target="_blank" rel="noopener noreferrer">building a toy SQLite engine from scratch in C</a>.
   </p>
+</div>
 
   <h2 class="work-heading">Work Experience</h2>
   <div class="work-entry">
@@ -72,7 +72,8 @@
   <div class="work-entry project-entry">
     <a href="https://019d0430-b246-4443-c144-9437cec4e883.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer"><img src="assets/projects/armavisualizer.png" alt="Arma Visualizer Screenshot" /></a>
     <div>
-      <span class="work-date">Arma Visualizer: R, roxygen2, R Markdown, Shiny</span>
+      <span class="work-date">Arma Visualizer</span>
+      <span class="tech-tags"><span class="tech-tag">R</span><span class="tech-tag">roxygen2</span><span class="tech-tag">R Markdown</span><span class="tech-tag">Shiny</span></span>
       <p>An R package built to standard conventions, with S3 class implementations, roxygen2-style documentation, and testthat unit tests covering each model family. It also includes proper vignettes walking through the AR, MA, and linear regression workflows, making it more of a reproducible, documented statistical tool than just a collection of scripts.</p>
       <div class="work-links">
         <a href="https://github.com/Kevaan-b/STA380" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -84,7 +85,8 @@
   <div class="work-entry project-entry">
     <a href="https://devpost.com/software/prove-it" target="_blank" rel="noopener noreferrer"><img src="assets/projects/prove-it.jpg" alt="project" /></a>
     <div>
-      <span class="work-date">Prove It!: Python, Next.js, React, PostgreSQL</span>
+      <span class="work-date">Prove It!</span>
+      <span class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></span>
       <p>A real-time collaborative proof editor built for discrete math students, where an AI backend (Gemini) analyzes your writing and flags logical errors, structural issues, and grammatical problems inline as you type. It's a full-stack monorepo with a Next.js frontend, Socket.IO for live collaboration, and a FastAPI ML service connected via a Redis queue. Won best use of DigitalOcean at EmberHacks 2025.</p>
       <div class="work-links">
         <a href="https://github.com/phintruong/Prove-It" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -96,14 +98,14 @@
   <div class="work-entry project-entry">
     <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer"><img src="assets/projects/hangman-java-game.png" alt="project" /></a>
     <div>
-      <span class="work-date">Hangman: Java, Maven, Java-Websocket, Okhttp</span>
+      <span class="work-date">Hangman</span>
+      <span class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Maven</span><span class="tech-tag">Java-Websocket</span><span class="tech-tag">Okhttp</span></span>
       <p>A Java Hangman game built around Clean Architecture, where each layer (entities, use cases, interface adapters, and frameworks) has strict dependency rules and single responsibilities. It leans heavily on OOP design patterns like State for round lifecycle management, Builder for app wiring, and Observer for view updates, with proper DAO interfaces keeping the data layer swappable. Written as a group project for CSC207, so the focus was as much on getting the architecture right as on the game itself.</p>
       <div class="work-links">
         <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </div>
-
   <div class="contact">
     <p class="contact-label">Contact</p>
     <a href="mailto:kevnjoseph42@gmail.com">kevnjoseph42@gmail.com</a>
