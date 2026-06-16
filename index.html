@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kevin Joseph</title>
+  <meta name="description" content="Kevin Joseph — CS & Statistics student at U of T. Application developer at CIBC, data science intern at FanVerse." />
   <style>
 :root {
   --bg:        #EDF2EA;
@@ -129,6 +130,13 @@ h1 {
   margin: 0 auto 1.5rem;
   text-align: left;
   color: var(--ink);
+}
+
+.work-title {
+  font-size: 14pt;
+  font-weight: bold;
+  color: var(--ink);
+  margin: 0 0 0.15rem;
 }
 
 .work-heading:nth-of-type(2) {
@@ -290,7 +298,7 @@ h1 {
     aspect-ratio: 1 / 1;
   }
 
-  .work-entry img {
+  img {
     display: none;
   }
 }
@@ -312,12 +320,18 @@ h1 {
   <div class="image-row">
     <div>
       <div class="img-frame square">
-        <img src="assets/square.jpg" alt="square image" title="Picture of me!" />
+        <picture>
+          <source srcset="assets/square.webp" type="image/webp" />
+          <img src="assets/square.jpg" alt="square image" title="Picture of me!" fetchpriority="high" />
+        </picture>
       </div>
     </div>
     <div>
       <div class="img-frame landscape">
-        <img src="assets/rectangle.jpg" alt="landscape image" title="Great landscape pic of the Swiss Alps" />
+        <picture>
+          <source srcset="assets/rectangle.webp" type="image/webp" />
+          <img src="assets/rectangle.jpg" alt="landscape image" title="Great landscape pic of the Swiss Alps" fetchpriority="high" />
+        </picture>
       </div>
     </div>
   </div>
@@ -332,8 +346,12 @@ h1 {
 
   <h2 class="work-heading">Work Experience</h2>
   <div class="work-entry">
-    <a href="https://www.wearefanverse.com/" target="_blank" rel="noopener noreferrer"><img src="assets/work/fanverse.png" alt="Fanverse" loading="lazy" /></a>
+    <a href="https://www.wearefanverse.com/" target="_blank" rel="noopener noreferrer"><picture>
+          <source srcset="assets/work/fanverse.webp" type="image/webp" />
+          <img src="assets/work/fanverse.png" alt="Fanverse" loading="lazy" />
+        </picture></a>
     <div>
+      <span class="work-title">Data Science Intern</span>
       <span class="work-date">Mar 2026 - May 2026</span>
       <p>FanVerse is a B2B SaaS fan intelligence platform focused on women's sports analytics. The technical work covered full-stack infrastructure including database architecture with Supabase Postgres, a batch data ingestion pipeline, a Next.js frontend with a FastAPI backend, fan segmentation logic, and an AI-powered query panel built on the Claude and Gemini APIs.</p>
       <div class="work-links">
@@ -343,8 +361,12 @@ h1 {
   </div>
 
   <div class="work-entry">
-    <a href="https://www.cibc.com/" target="_blank" rel="noopener noreferrer"><img src="assets/work/cibc-logo.png" alt="CIBC" loading="lazy" /></a>
+    <a href="https://www.cibc.com/" target="_blank" rel="noopener noreferrer"><picture>
+          <source srcset="assets/work/cibc-logo.webp" type="image/webp" />
+          <img src="assets/work/cibc-logo.png" alt="CIBC" loading="lazy" />
+        </picture></a>
     <div>
+      <span class="work-title">Application Developer Intern</span>
       <span class="work-date">May 2025 - Aug 2025</span>
       <p>At CIBC, the work focused on building and optimizing internal data pipelines using Python and the Azure SDK. This included an asynchronous producer-consumer pipeline for processing large volumes of Azure Blob Storage data, an ETL pipeline for extracting and filtering log events, and automated aggregation of data from 50+ API endpoints into standardized Excel reports using Pandas.</p>
       <div class="work-links">
@@ -356,7 +378,10 @@ h1 {
   <h2 class="work-heading">Projects</h2>
 
   <div class="work-entry project-entry">
-    <a href="https://019d0430-b246-4443-c144-9437cec4e883.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer"><img src="assets/projects/armavisualizer.jpg" alt="Arma Visualizer Screenshot" loading="lazy" /></a>
+    <a href="https://019d0430-b246-4443-c144-9437cec4e883.share.connect.posit.cloud/" target="_blank" rel="noopener noreferrer"><picture>
+          <source srcset="assets/projects/armavisualizer.webp" type="image/webp" />
+          <img src="assets/projects/armavisualizer.jpg" alt="Arma Visualizer Screenshot" loading="lazy" />
+        </picture></a>
     <div>
       <span class="work-date">Arma Visualizer</span>
       <span class="tech-tags"><span class="tech-tag">R</span><span class="tech-tag">roxygen2</span><span class="tech-tag">R Markdown</span><span class="tech-tag">Shiny</span></span>
@@ -369,7 +394,10 @@ h1 {
   </div>
 
   <div class="work-entry project-entry">
-    <a href="https://devpost.com/software/prove-it" target="_blank" rel="noopener noreferrer"><img src="assets/projects/prove-it.jpg" alt="Prove It! Screenshot" loading="lazy" /></a>
+    <a href="https://devpost.com/software/prove-it" target="_blank" rel="noopener noreferrer"><picture>
+          <source srcset="assets/projects/prove-it.webp" type="image/webp" />
+          <img src="assets/projects/prove-it.jpg" alt="Prove It! Screenshot" loading="lazy" />
+        </picture></a>
     <div>
       <span class="work-date">Prove It!</span>
       <span class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">PostgreSQL</span></span>
@@ -382,7 +410,10 @@ h1 {
   </div>
 
   <div class="work-entry project-entry">
-    <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer"><img src="assets/projects/hangman-java-game.jpg" alt="Hangman Screenshot" loading="lazy" /></a>
+    <a href="https://github.com/jxlin25/CSC207-Hangman" target="_blank" rel="noopener noreferrer"><picture>
+          <source srcset="assets/projects/hangman-java-game.webp" type="image/webp" />
+          <img src="assets/projects/hangman-java-game.jpg" alt="Hangman Screenshot" loading="lazy" />
+        </picture></a>
     <div>
       <span class="work-date">Hangman</span>
       <span class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Maven</span><span class="tech-tag">Java-Websocket</span><span class="tech-tag">Okhttp</span></span>
