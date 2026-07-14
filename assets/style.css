@@ -1,0 +1,40 @@
+a {
+    color: #c4a7e7; 
+}
+
+a:hover {
+    color: #f6c177;   
+}
+
+:root, .light-mode {
+  --bg: #faf4ed;
+  --text: #575279;
+}
+.dark-mode {
+  --bg: #232136;
+  --text: #e0def4;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Consolas, monospace;
+}
+
+.nav-link {
+  color: #eb6f92;
+  text-decoration: none;
+  border: 1px solid #eb6f92;
+  padding: 2px 8px;
+}
+.nav-link:hover {
+  color: #ebbcba;
+  border-color: #ebbcba;
+}
+
+.contact-link {
+  color: #31748f;
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: #9ccfd8;
+}
